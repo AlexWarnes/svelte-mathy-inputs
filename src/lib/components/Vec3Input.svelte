@@ -1,18 +1,18 @@
 <script lang="ts">
-  interface ValueProp {
-    x: number,
-    y: number,
-    z: number,
-    [key: string]: unknown,
-  }
-	export let groupLabel: string = "";
+	interface ValueProp {
+		x: number;
+		y: number;
+		z: number;
+		[key: string]: unknown;
+	}
+	export let groupLabel: string = '';
 	export let value: ValueProp;
 	export let min: number | undefined = undefined;
 	export let max: number | undefined = undefined;
 	export let step: number = 1;
-	export let style: string = "";
+	export let style: string = '';
 
-  // TODO: radians prop for automatic step/min/max settings?
+	// TODO: radians prop for automatic step/min/max settings?
 </script>
 
 <slot name="group-label">
@@ -34,8 +34,13 @@
 </form>
 
 <style>
-  @import '../styles/forms.css';
-
+	* {
+		box-sizing: border-box;
+	}
+	input.vec3 {
+		display: block;
+		width: 3rem;
+	}
 	.group-label {
 		margin: 1rem 0 0.25rem;
 	}

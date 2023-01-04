@@ -14,5 +14,7 @@
 </label>
 
 <style>
-	@import '../styles/forms.css';
+	* {
+		box-sizing: border-box;
+	}
 </style>
