@@ -1,5 +1,11 @@
 # svelte-mathy-inputs
 
+## 0.0.4
+
+### Patch Changes
+
+- fc551b3: scope styles
+
 ## 0.0.3
 
 ### Patch Changes
